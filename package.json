@@ -1,0 +1,16 @@
+{
+  "name": "maison-noire-black-friday",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MAISON NOIRE — boutique e-commerce Black Friday (maison, textile, art de la table). Rendu serveur, formulaires progressifs, Node.js + SQLite. Zero dépendance externe.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server/index.js",
+    "reset": "node -e \"require('node:fs').rmSync('data',{recursive:true,force:true});console.log('base réinitialisée')\"",
+    "test": "node --disable-warning=ExperimentalWarning tools/smoke-test.js"
+  }
+}
